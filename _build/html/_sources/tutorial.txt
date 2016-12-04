@@ -1,0 +1,98 @@
+Tutorial
+=============
+
+
+Requirements
+------------
+
+  - getopt
+  - sys
+  - json
+  - requests
+  - BeautifulSoup
+
+
+Installation
+------------
+
+  All the dependencies can be installed usin PIP (Python Package Index)
+
+  $ pip install json beautifulsoup4 requests
+
+  For additional information about the modules, please check the respective pages
+
+  - `getopt <https://docs.python.org/2/library/getopt.html>`_
+
+  - `sys <https://docs.python.org/2/library/sys.html>`_
+
+  - `json <https://docs.python.org/2/library/json.html>`_
+
+  - `requests <http://docs.python-requests.org/en/master>`_
+
+  - `BeautifulSoup <https://www.crummy.com/software/BeautifulSoup>`_
+
+
+Usage
+------------
+
+  **Name**
+
+
+    parseMetacritics.py - parse HTML for the “Top Games (By Metascore)” on Metacritic’s page (http://www.metacritic.com/game)
+
+
+  **Synopsis**
+
+
+    parseMetacritics.py [-h] or [--help] [-p] or [--parse] [-r] or [--restapi]
+
+
+  **Description**
+
+
+    This tutorial page documents the Python code parseMetacritics, which is intended to parse the Metacritics score from Playstation 3 and 4, Xbox 360 and One, PC, Nintendo Wii and others returning a formated JSON output of the result.
+
+    Another functionality is an exposed RESTAPI using Python requests module which allows a GET in /games/ to get all the scores and titles from Playstation 3 or a GET in /games/title_of_game.
+
+
+Options
+------------
+  
+
+  **[-h] or [--help]**
+
+
+    Display a help menu with the correct usage of the code
+
+
+  **[-p] or [--parse]**
+
+
+    This option will parse an URL from Metacritic’s returning a JSON of the game titles and its related scores.
+
+    **Examples:**
+
+      PS4
+        $ parseMetacritics.py --parse http://www.metacritic.com/browse/games/release-date/new-releases/ps4/metascore
+
+      PS3 
+        $ parseMetacritics.py --parse http://www.metacritic.com/browse/games/release-date/new-releases/ps3/metascore
+
+      Xbox One
+        $ parseMetacritics.py --parse http://www.metacritic.com/browse/games/release-date/new-releases/xboxone/metascore
+
+
+  **[-r] or [--restapi]**
+
+
+    This functionality is ONLY for PS3 games, it returns all PS3 titles and scores or information about a specific game.
+
+    **Examples:**
+
+      **All PS3 Games**
+
+        $ parseMetacritics.py --restapi "/games"
+
+      **Specific Game**
+
+        $ parseMetacritics.py --restapi "/games/Yakuza 5"

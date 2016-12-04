@@ -1,0 +1,5 @@
+Code Documentation (Auto generated)
+====================================
+
+.. automodule:: parseMetacritics
+   :members:

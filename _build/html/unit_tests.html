@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unit Tests &mdash; Parsing Metacritic’s 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="copyright" title="Copyright" href="copyright.html"/>
+    <link rel="top" title="Parsing Metacritic’s 1.0.0 documentation" href="index.html"/>
+        <link rel="prev" title="Tutorial" href="tutorial.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Parsing Metacritic’s
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="author.html">Author - Franco Bontorin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Code Documentation (Auto generated)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Copyrights</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Unit Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#help-menu">Help Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parse-html">Parse HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rest-api">Rest API</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Parsing Metacritic’s</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Unit Tests</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/unit_tests.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unit-tests">
+<h1>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="help-menu">
+<h2>Help Menu<a class="headerlink" href="#help-menu" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>[-h] or [&#8211;help]</strong></p>
+<blockquote>
+<div><p>Display a help menu with the correct usage of the code</p>
+<div class="figure">
+<img alt="_images/help.png" src="_images/help.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="parse-html">
+<h2>Parse HTML<a class="headerlink" href="#parse-html" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>[-p] or [&#8211;parse]</strong></p>
+<blockquote>
+<div><p>This option will parse an URL from Metacritic’s returning a JSON of the game titles and its related scores.</p>
+<blockquote>
+<div><p><strong>PS3</strong></p>
+<blockquote>
+<div><div class="figure">
+<img alt="_images/parse_ps3.png" src="_images/parse_ps3.png" />
+</div>
+</div></blockquote>
+<p><strong>PS Vita</strong></p>
+<div class="figure">
+<img alt="_images/parse_vita.png" src="_images/parse_vita.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="rest-api">
+<h2>Rest API<a class="headerlink" href="#rest-api" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>[-r] or [&#8211;restapi]</strong></p>
+<blockquote>
+<div><p>This functionality is ONLY for PS3 games, it returns all PS3 titles and scores or information about a specific game.</p>
+<p><strong>/games</strong></p>
+<blockquote>
+<div><blockquote>
+<div><div class="figure">
+<img alt="_images/rest_allps3.png" src="_images/rest_allps3.png" />
+</div>
+</div></blockquote>
+<p><strong>/games/Yakuza 5</strong></p>
+<blockquote>
+<div><div class="figure">
+<img alt="_images/rest_yakuza.png" src="_images/rest_yakuza.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="tutorial.html" class="btn btn-neutral" title="Tutorial" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2016, Franco Bontorin.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+Parsing Metacritic’s
+=====================
+
+Introduction
+------------
+
+    This page documents the Python code parseMetacritics, which is intended to parse the Metacritics score from Playstation 3 and 4, Xbox 360 and One, PC, Nintendo Wii and others returning a formated JSON of the result.
+
+    Another functionality is an exposed RESTAPI using Python requests module which allows a GET in /games/ to get all the scores and titles from Playstation 3 or a GET in /games/title_of_game that will bring the chosen game its score in a JSON output.
+
+    All the documentation for this project was created using Python Sphinx; a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.
+
+Contents
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   author
+   code
+   copyright
+   tutorial
+   unit_tests
+   
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

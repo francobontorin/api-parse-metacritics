@@ -1,0 +1,61 @@
+Unit Tests
+==========
+
+
+Help Menu
+----------
+
+
+  **[-h] or [--help]**
+
+
+    Display a help menu with the correct usage of the code
+
+    .. figure::  images/help.png
+
+
+
+Parse HTML
+-----------
+
+
+  **[-p] or [--parse]**
+
+
+    This option will parse an URL from Metacritic’s returning a JSON of the game titles and its related scores.
+
+
+	   **PS3**
+
+	    .. figure::  images/parse_ps3.png
+
+
+
+	   **PS Vita**
+
+	   .. figure::  images/parse_vita.png
+
+
+
+Rest API
+----------
+
+
+  **[-r] or [--restapi]**
+
+
+    This functionality is ONLY for PS3 games, it returns all PS3 titles and scores or information about a specific game.
+
+
+    **/games**
+
+	    .. figure::  images/rest_allps3.png
+
+
+
+	**/games/Yakuza 5**
+
+		.. figure::  images/rest_yakuza.png
+
+
+
