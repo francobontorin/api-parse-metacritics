@@ -5,7 +5,7 @@ Python code parseMetacritics, which is intended to parse the Metacritics score f
 
 - Project Documentation
 
-  The full documentation for this project can be found here: https://francobontorin.github.io/parseMetacritics/
+  The full documentation for this project can be found here: https://francobontorin.github.io/api-parse-metacritics/
 
 - Author
 
